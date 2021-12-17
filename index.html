@@ -9,13 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
     <style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+
       html {
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
         color: white;
         font-family: Inter, sans-serif;
-        font-size: 20px;
+        font-size: 16px;
+        height: 100vh;
         text-rendering: optimizeLegibility;
+        width: 100vw;
       }
 
       body {
@@ -23,23 +29,37 @@
         background-position: center top;
         background-repeat: no-repeat;
         background-size: cover;
+        height: 100vh;
         margin: 0;
+        width: 100vw;
+      }
+
+      div {
+        bottom: 2rem;
+        display: flex;
+        left: 2rem;
+        position: absolute;
       }
 
       ul {
-        bottom: 2rem;
-        left: 2rem;
         list-style: none;
         margin: 0;
         padding: 0;
-        position: absolute;
+      }
+
+      ul:not(:last-child) {
+        margin-right: 2rem;
       }
 
       a {
         color: inherit;
         display: inline-block;
+        mix-blend-mode: soft-light;
         text-decoration: none;
-        text-shadow: 0 2px 4px #00000080;
+      }
+
+      a:hover {
+        mix-blend-mode: normal;
       }
 
       li:not(:last-child) {
@@ -50,34 +70,40 @@
     <title>Start Page</title>
   </head>
   <body>
-    <ul>
-      <li>
-        <a href="https://mail.google.com" rel="nofollow noreferrer" target="_blank">Google Mail</a>
-      </li>
-      <li>
-        <a href="https://drive.google.com" rel="nofollow noreferrer" target="_blank">Google Drive</a>
-      </li>
-      <li>
-        <a href="https://calendar.google.com" rel="nofollow noreferrer" target="_blank">Google Calendar</a>
-      </li>
-      <li>
-        <a href="https://otakumode.com" rel="nofollow noreferrer" target="_blank">Tokyo Otaku Mode</a>
-      </li>
-      <li>
-        <a href="https://amiami.com" rel="nofollow noreferrer" target="_blank">AmiAmi</a>
-      </li>
-      <li>
-        <a href="https://solarisjapan.com" rel="nofollow noreferrer" target="_blank">Solaris Japan</a>
-      </li>
-      <li>
-        <a href="https://myfigurecollection.net/" rel="nofollow noreferrer" target="_blank">MyFigureCollection</a>
-      </li>
-      <li>
-        <a href="https://youtube.com" rel="nofollow noreferrer" target="_blank">YouTube</a>
-      </li>
-      <li>
-        <a href="https://reddit.com" rel="nofollow noreferrer" target="_blank">Reddit</a>
-      </li>
-    </ul>
+    <div>
+      <ul>
+        <li>
+          <a href="https://mail.google.com" rel="nofollow noreferrer" target="_blank">Google Mail</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com" rel="nofollow noreferrer" target="_blank">Google Drive</a>
+        </li>
+        <li>
+          <a href="https://calendar.google.com" rel="nofollow noreferrer" target="_blank">Google Calendar</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="https://otakumode.com" rel="nofollow noreferrer" target="_blank">Tokyo Otaku Mode</a>
+        </li>
+        <li>
+          <a href="https://amiami.com" rel="nofollow noreferrer" target="_blank">AmiAmi</a>
+        </li>
+        <li>
+          <a href="https://solarisjapan.com" rel="nofollow noreferrer" target="_blank">Solaris Japan</a>
+        </li>
+        <li>
+          <a href="https://myfigurecollection.net/" rel="nofollow noreferrer" target="_blank">MyFigureCollection</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="https://youtube.com" rel="nofollow noreferrer" target="_blank">YouTube</a>
+        </li>
+        <li>
+          <a href="https://reddit.com" rel="nofollow noreferrer" target="_blank">Reddit</a>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
